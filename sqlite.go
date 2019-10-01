@@ -23,8 +23,9 @@ const KeysTable = "keys"
 // its Run() function.
 //
 // Example usage:
+//
 //     b := joe.New("example",
-//         file.Memory("/tmp/joe.json"),
+//         sqlite.Memory(":memory:"),
 //         …
 //     )
 //
@@ -137,9 +138,7 @@ func (s *memory) init() error {
 	}
 
 	s.logger.Debug("Initialising DB", zap.String("table", KeysTable))
-	_, err := s.conn.Exec(`
-		CREATE TABLE "` + KeysTable + `" (key TEXT NOT NULL PRIMARY KEY, value BLOB)
-	`)
+	_, err := s.conn.Exec(`CREATE TABLE "` + KeysTable + `" (key TEXT NOT NULL PRIMARY KEY, value BLOB)`)
 
 	return errors.Wrap(err, "failed to initialise")
 }
