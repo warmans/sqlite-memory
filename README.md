@@ -3,7 +3,6 @@
 <p align="center">
 	<a href="https://circleci.com/gh/warmans/sqlite-memory/tree/master"><img src="https://circleci.com/gh/warmans/sqlite/tree/master.svg?style=shield"></a>
 	<a href="https://goreportcard.com/report/github.com/warmans/sqlite"><img src="https://goreportcard.com/badge/github.com/warmans/sqlite"></a>
-	<a href="https://codecov.io/gh/warmans/sqlite"><img src="https://codecov.io/gh/warmans/sqlite/branch/master/graph/badge.svg"/></a>
 	<a href="https://godoc.org/github.com/warmans/sqlite"><img src="https://img.shields.io/badge/godoc-reference-blue.svg?color=blue"></a>
 	<a href="https://github.com/warmans/sqlite/blob/master/LICENSE"><img src="https://img.shields.io/badge/license-BSD--3--Clause-blue.svg"></a>
 </p>
