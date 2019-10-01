@@ -18,7 +18,7 @@ b := &ExampleBot{
 }
 ```
 
-or for a persistant DB:
+or for a persistent DB:
 
 ```go
 b := &ExampleBot{
