@@ -7,7 +7,6 @@ jobs:
     docker:
       # specify the version
       - image: circleci/golang:1.12
-    working_directory: /go/src/github.com/warmans/sqlite-memory
     steps:
       - checkout
       - run: go test -race -coverprofile=coverage.txt -covermode=atomic
